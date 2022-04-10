@@ -13,25 +13,25 @@
     <link href="https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700;900&display=swap" rel="stylesheet">
 </head>
 <body>
-    <div class="main">
+    <div id="main" class="main">
         <div class="main__header">
-            <img src="img/logo.svg" alt="CloudBudget logo" class="logo">
+            <img src="img/logo.svg" alt="CloudBudget logo" class="logo" id="logo">
             <ul class="main__header__menu">
-                <li class="main__header__menu-item"><a href="#" class="main__header__menu-item-link">Overview</a></li>
-                <li class="main__header__menu-item"><a href="#" class="main__header__menu-item-link">Features</a></li>
-                <li class="main__header__menu-item"><a href="#" class="main__header__menu-item-link">Technology</a></li>
-                <li class="main__header__menu-item"><a href="#" class="main__header__menu-item-link">Contact</a></li>
+                <li class="main__header__menu-item"><a href="#main" class="main__header__menu-item-link">Overview</a></li>
+                <li class="main__header__menu-item"><a href="#features" class="main__header__menu-item-link">Features</a></li>
+                <li class="main__header__menu-item"><a href="#technology" class="main__header__menu-item-link">Technology</a></li>
+                <li class="main__header__menu-item"><a href="#contact" class="main__header__menu-item-link">Contact</a></li>
                 <li class="main__header__menu-item"><a href="#" class="main__header__menu-item-link">Sign up</a></li>
             </ul>
             <button class="main__header__button">Login</button>
-            <button class="main__header__button-menu">menu</button>
-            <div class="main__header__menu-mobile">
+            <button class="openMobileMenu" id="openMenu" onclick="openMenu()"><img src="img/menu.svg" alt=""></button>
+            <div class="main__header__menu-mobile" id="mobileMenu">
                 <ul class="main__header__menu-mobile__list">
-                    <li class="main__header__menu-mobile__list__item"><a href="#" class="main__header__menu-mobile__list__item-link">1</a></li>
-                    <li class="main__header__menu-mobile__list__item"><a href="#" class="main__header__menu-mobile__list__item-link">2</a></li>
-                    <li class="main__header__menu-mobile__list__item"><a href="#" class="main__header__menu-mobile__list__item-link">3</a></li>
-                    <li class="main__header__menu-mobile__list__item"><a href="#" class="main__header__menu-mobile__list__item-link">4</a></li>
-                    <li class="main__header__menu-mobile__list__item"><a href="#" class="main__header__menu-mobile__list__item-link">5</a></li>
+                    <li class="main__header__menu-mobile__list__item"><a href="#main" class="main__header__menu-mobile__list__item-link">Overview</a></li>
+                    <li class="main__header__menu-mobile__list__item"><a href="#features" class="main__header__menu-mobile__list__item-link">Features</a></li>
+                    <li class="main__header__menu-mobile__list__item"><a href="#technology" class="main__header__menu-mobile__list__item-link">Technology</a></li>
+                    <li class="main__header__menu-mobile__list__item"><a href="#contact" class="main__header__menu-mobile__list__item-link">Contact</a></li>
+                    <li class="main__header__menu-mobile__list__item"><a href="#" class="main__header__menu-mobile__list__item-link">Sign up</a></li>
                 </ul>
                 <button class="main__header__menu-mobile__button">Login</button>
             </div>
@@ -50,7 +50,7 @@
         </div>
         <img src="img/easy-photo.png" alt="" class="easy__img">
     </div>
-    <div class="features">
+    <div id="features" class="features">
         <h3 class="features-title">Features</h3>
         <div class="features__cards">
             <div class="features__cards__card">
@@ -79,7 +79,7 @@
             </div>
         </div>
     </div>
-    <div class="technology">
+    <div id="technology" class="technology">
         <h3 class="technology__title">Technology</h3>
         <div class="technology__content">
             <div class="technology__content__column">
@@ -129,7 +129,7 @@
         </div>
         <img src="img/stay-photo.svg" alt="" class="stay-img">
     </div>
-    <div class="contact">
+    <div id="contact" class="contact">
         <div class="contact__content">
             <h3 class="contact__content-title">Contact</h3>
             <p class="contact__content-text">Questions or concerns? Just fill out the form below and our support team will get back to you within 24 hours</p>
