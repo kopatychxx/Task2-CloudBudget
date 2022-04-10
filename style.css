@@ -54,6 +54,22 @@
     background-color: white;
     color: red;
 }
+.main__header__button-menu{
+    display: none;
+}
+.main__header__menu-mobile{
+    position: absolute;
+    background-color: #fff;
+    top: 100px;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    z-index: 3;
+    visibility: hidden;
+}
+.main__header__menu-mobile__list{
+    list-style: none;
+}
 .main__content{
     display: flex;
     flex-direction: column;
@@ -427,6 +443,16 @@ a:hover:after{
     .main__header__button{
         display: none;
     }
+    .main__header__button-menu{
+        display: flex;
+        background: none;
+        border: none;
+    }
+    .main__header__button-menu + .main__header__menu-mobile:active,
+    main__header__button-menu:focus + .main__header__menu-mobile{
+        visibility: visible;
+    }
+
     .main__content-title{
         font-size: 50px;
     }
